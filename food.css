@@ -1,0 +1,198 @@
+/* ========== BLOQUE: nav ========== */
+/* Transicion suave de color para los enlaces del header */
+.nav__list--link{
+    transition: color 0.5s ease-in-out;
+}
+/* Color dorado al hacer click en los enlaces del header */
+.nav__list--link:hover {
+    color: #FFD700;             
+}
+.nav-bar{
+    z-index: 1000;
+}
+.nav-list{
+    padding: 0;
+    
+}
+/* ========== BLOQUE: food-hero ========== */
+/* seccion principal del hero */
+.food__hero{
+    padding-top: 7vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+/* Configuracion del hero */
+.food__hero--contenido{
+    width: 45%;
+    padding: 1vh;
+}
+/* titulo del hero */
+.food__hero--titulo{
+    font-size: 5vh;
+    margin-bottom: 2vh;
+    color: var(--encabezados);
+}
+/* imagen del hero */
+.food__hero--img{
+    width: 45%;
+    border-radius: 15px;
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+}
+/* texto del hero */
+.food__hero--descripcion{
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    margin: 0;
+    max-width: 75%;
+    text-align:justify;
+}
+
+@media (max-width: 768px) {
+    .food__hero {
+        flex-direction: column;
+        height: auto;
+        padding: 8rem 1rem 2rem; 
+        text-align: center;
+    }
+    .food__hero--contenido{
+        width: 80%;
+    }
+    .food__hero--descripcion{
+        max-width: 100%;
+    }
+    .food__hero--titulo{
+        text-align: center;
+        max-width: 100%;
+    }
+    .food__hero--img{
+        width: 70%;
+        margin-top: 4vh;
+    }
+}
+
+/* ========== BLOQUE: food-menu ========== */
+
+.food__menu{
+    padding: 0vh 2vh 4vh 2vh;
+}
+.food__menu--titulo{
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--encabezados);
+    margin-bottom: 15vh;
+}
+.food__menu--contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10vh;
+    justify-content: center;
+    margin: 3vh;
+}
+.food__menu--elemento{
+    background-color: white;
+    display: flex;
+    flex: 0 1 510px;
+    flex-direction: column;
+    border-radius: 15px;
+    overflow: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin-bottom: 2vh;
+}
+.food__menu--elemento:hover{
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); 
+    z-index: 10; 
+}
+.food__menu--imagen{
+    width: 100%;
+    height: 250px;
+    object-fit:cover;
+}
+.food__menu--nombre{
+    font-size: 1.5rem;
+    color: var(--encabezados);
+    padding-left: 1vh;
+}
+.food__menu--texto{
+    color: #666;
+    padding: 1vh;
+    text-align: justify;
+    margin-bottom: 1vh;
+}
+.food__menu--contenido{
+    padding: 3vh;
+}
+.food-item__precio{
+    font-size: 1.3rem;
+    color: var(--enlaces-destacados);
+    font-weight: bold;
+    margin-right: 1vh;
+}
+.food-item__boton{
+    background-color: var(--fondo-nav);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+.food-item__boton:focus{
+    outline: 2px solid var(--fondo-nav);
+    outline-offset: 2px;
+}
+    .food-item__boton:hover{
+    background-color: var(--enlaces-destacados);
+    transform: scale(1.05);
+}
+.food__info{
+    background-color: var(--fondo-nav);
+    padding: 3rem 2rem;
+    color: white;
+}
+.food__info--contenedor{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+.food__info--titulo {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--amarillo-tradicional);
+}
+.food__info--texto {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+.food__footer{
+    padding: 3rem 2rem;
+    margin-top: 2rem;
+    background-color: var(--fondo-nav);
+    height: 100%;
+
+}
+.food__footer--contenedor{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+.food__item--titulo{
+    color: white;
+    line-height: 1.8;
+    font-size: 3vh;
+}
+.food__footer--texto{
+    color: rgb(255, 215, 215);
+}
